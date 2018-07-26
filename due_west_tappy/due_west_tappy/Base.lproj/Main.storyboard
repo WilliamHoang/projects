@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="due_west_tappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbV-MW-yPb">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbo-aB-UcF">
+                                        <rect key="frame" x="163" y="142" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3m8-Yx-c6k"/>
+                                            <constraint firstAttribute="width" constant="50" id="DvX-YV-lHe"/>
+                                        </constraints>
+                                        <state key="normal" image="Blue Button"/>
+                                        <connections>
+                                            <action selector="BlueBottomPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gD7-pY-RQl"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44F-I2-M0L">
+                                        <rect key="frame" x="50" y="50" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="QZL-UE-WeP"/>
+                                            <constraint firstAttribute="height" constant="50" id="WZE-Ja-1zN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.4278937394141934" green="0.60764225350071688" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.90172728691049953" blue="0.43792541756668035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tbo-aB-UcF" firstAttribute="centerX" secondItem="GbV-MW-yPb" secondAttribute="centerX" id="Vb6-mP-m19"/>
+                                    <constraint firstItem="44F-I2-M0L" firstAttribute="top" secondItem="GbV-MW-yPb" secondAttribute="top" constant="50" id="chD-8D-RRO"/>
+                                    <constraint firstItem="tbo-aB-UcF" firstAttribute="centerY" secondItem="GbV-MW-yPb" secondAttribute="centerY" id="eXr-4z-hbW"/>
+                                    <constraint firstItem="44F-I2-M0L" firstAttribute="leading" secondItem="GbV-MW-yPb" secondAttribute="leading" constant="50" id="pSX-MG-LnA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wg-bV-yvK">
+                                <rect key="frame" x="163" y="316" width="49" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.22041307738105764" blue="0.20525958598227134" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResetBottom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wx1-k4-1vb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imG-EN-6zQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsO-hh-5PU">
+                                        <rect key="frame" x="163" y="142" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="dbQ-Xn-Iw2"/>
+                                            <constraint firstAttribute="height" constant="50" id="dw5-aD-JEr"/>
+                                        </constraints>
+                                        <state key="normal" image="Pink Circle"/>
+                                        <connections>
+                                            <action selector="PinkBottomPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fy-KV-lqS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFb-DW-pQc">
+                                        <rect key="frame" x="275" y="233.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="54m-rq-p5I"/>
+                                            <constraint firstAttribute="width" constant="50" id="8zk-qm-aIU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.2939779122809798" blue="0.31339954930564551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43788907365427021" green="0.92400885360730778" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qsO-hh-5PU" firstAttribute="centerY" secondItem="imG-EN-6zQ" secondAttribute="centerY" id="0rD-bP-m7z"/>
+                                    <constraint firstAttribute="bottom" secondItem="HFb-DW-pQc" secondAttribute="bottom" constant="50" id="MbF-Fv-uF5"/>
+                                    <constraint firstItem="qsO-hh-5PU" firstAttribute="centerX" secondItem="imG-EN-6zQ" secondAttribute="centerX" id="PqY-P3-l96"/>
+                                    <constraint firstAttribute="trailing" secondItem="HFb-DW-pQc" secondAttribute="trailing" constant="50" id="Z3l-pj-uf7"/>
+                                    <constraint firstAttribute="top" secondItem="imG-EN-6zQ" secondAttribute="top" id="mCG-Vj-Rwi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GbV-MW-yPb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2as-wz-eIb"/>
+                            <constraint firstItem="GbV-MW-yPb" firstAttribute="top" secondItem="imG-EN-6zQ" secondAttribute="bottom" id="EbO-hx-Dre"/>
+                            <constraint firstItem="imG-EN-6zQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ny5-XR-VLH"/>
+                            <constraint firstItem="GbV-MW-yPb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TND-CW-qTF"/>
+                            <constraint firstItem="3Wg-bV-yvK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a7X-Xx-Rma"/>
+                            <constraint firstItem="GbV-MW-yPb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cbK-gg-GPT"/>
+                            <constraint firstItem="imG-EN-6zQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e8g-fH-lN1"/>
+                            <constraint firstItem="imG-EN-6zQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kl7-Ex-zKW"/>
+                            <constraint firstItem="3Wg-bV-yvK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lcQ-Li-g49"/>
+                            <constraint firstItem="imG-EN-6zQ" firstAttribute="height" secondItem="GbV-MW-yPb" secondAttribute="height" id="u5i-yK-9SZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="BlueBottomCount" destination="44F-I2-M0L" id="K1i-rF-Akd"/>
+                        <outlet property="PinkButtonCount" destination="HFb-DW-pQc" id="9Mx-TH-yGH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blue Button" width="125" height="125"/>
+        <image name="Pink Circle" width="125" height="125"/>
+    </resources>
+</document>
